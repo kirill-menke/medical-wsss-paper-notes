@@ -8,14 +8,16 @@ In addition, a short summary of the publicly available histopathological data se
 
 ### WSSS for Histopathology Images
 
-| Index  |  Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
-| :----: | :-------: | :--------: | :----------: | :--------: | :--: | :-------: | :-------: |
-| 01     | ICCV 2019 | [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf) | Image label (Binary) | Patch-level | *Coming soon* | No | [CAMELYON16](https://camelyon16.grand-challenge.org/Home/), [Colorectal Adenoma](https://github.com/ThoroughImages/CAMEL) |
+| Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
+| :-------: | :-------- | :----------: | :--------: | :--: | :-------: | :------- |
+| ICCV 2019 | [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf) | image label (binary) | patch-level | *coming soon* | no | [CAMELYON16](https://camelyon16.grand-challenge.org/Home/), [Colorectal Adenoma](https://github.com/ThoroughImages/CAMEL) |
+| MICCAI 2020 | [Weakly supervised multiple instance learning histopathological tumor segmentation](https://arxiv.org/abs/2004.05024) | image label (binary) | patch-level | *coming soon* | [pytorch](https://github.com/marvinler/tcga_segmentation) | [TCGA](https://portal.gdc.cancer.gov/), [PatchCamelyon](https://patchcamelyon.grand-challenge.org/) |
+
 
 ### WSSS for Natural Images
-| Index  |  Conference | Title | Annotation | LOD | My Review | Offical Code | Datasets |
-| :----: | :-------: | :--------: | :----------: | :--------: | :--: | :-------: | :-------: |
-| 01     | ICCV 2017 | [Simple Does It: Weakly Supervised Instance and Semantic Segmentation](https://arxiv.org/pdf/1603.07485.pdf) | Bounding Box (Multi-class) | Pixel-level | *Coming soon* | No | [PASCAL VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/), VOC12+COCO |
+| Conference | Title | Annotation | LOD | My Review | Offical Code | Datasets |
+| :-------: | :-------- | :----------: | :--------: | :--: | :-------: | :------- |
+| ICCV 2017 | [Simple Does It: Weakly Supervised Instance and Semantic Segmentation](https://arxiv.org/pdf/1603.07485.pdf) | bounding box (multi-class) | pixel-level | *coming soon* | no | [PASCAL VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/), VOC12+COCO |
 
 ## Summary of Semantic Segmentation Datasets for Histopathology
 | Name      | Type          | #Labels/Img     | #Classes      | #Img       | #GT   | Image Size    | Resolution        | Paper    |
