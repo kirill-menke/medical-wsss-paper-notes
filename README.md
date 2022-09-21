@@ -1,11 +1,14 @@
 # Weakly-supervised Semantic Segmentation for Histopathology Images
 
-In this repository a collection of short literature reviews on the topic of WSSS for histopathological image data is created.
-Occasionally, WSSS papers will be summarized whose methods have been evaluated with natural images only (e.g. from PASCAL VOC 2012 or ADE20K).
-In addition, a short summary of the publicly available histopathological data sets for semantic segmentation will be compiled.
+This repository contains an overview and short reviews of papers in the area of WSSS for histopathological image data.
+Occasionally, WSSS papers dealing exclusively with semantic segmentation on natural images (e.g. from PASCAL-VOC 2012 or ADE20K) will be included.
+Also, there is a brief summary of publicly available histopathology datasets below.
 
 ## Progress on Literature Review
-
+The ground-truth annotations used for training are listed for each paper in the *Annotation* column. 
+For WSSS, they generally fall (in order of decreasing informativeness) into one of the following categories: bounding box, scribble, point, or image label.
+The *LOD* column roughly indicates the level of detail of the segmentation, e.g. whether a class is assigned to each pixel or only to each patch.
+This is a very vague information, since the pathology images have a different resolution for the different methods and also the patch size itself differs. Therefore the *LOD* should only serve as a rough estimation for the time being.
 ### WSSS for Histopathology Images
 
 | Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
@@ -28,7 +31,7 @@ In addition, a short summary of the publicly available histopathological data se
 ## Summary of Semantic Segmentation Datasets for Histopathology
 | Name      | Type          | #Labels/Img     | #Classes      | #Img       | #GT   | Image Size    | Resolution        | Paper    |
 | :----:    | :-------:     | :--------:        | :----------:  | :--------:    | :--:              | :-------:     |:-------:          | :-------:|
-| CoCaHis   | Colon Cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1388 × 1037   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085)|
+| [CoCaHis](https://cocahis.irb.hr/) | Colon Cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1388 × 1037   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
 
 
 
