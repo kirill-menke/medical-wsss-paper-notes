@@ -7,6 +7,7 @@ In addition, a short summary of the publicly available histopathological data se
 ## Progress on Literature Review
 
 ### WSSS for Histopathology Images
+
 | Index  |  Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
 | :----: | :-------: | :--------: | :----------: | :--------: | :--: | :-------: | :-------: |
 | 01     | ICCV 2019 | [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf) | Image label (Binary) | Patch-level | *Coming soon* | No | [CAMELYON16](https://camelyon16.grand-challenge.org/Home/), [Colorectal Adenoma](https://github.com/ThoroughImages/CAMEL) |
@@ -25,4 +26,3 @@ In addition, a short summary of the publicly available histopathological data se
 
 ### TODO
 - Add DL approach used within each paper
-- 
