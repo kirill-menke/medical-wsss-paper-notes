@@ -1,45 +1,18 @@
-### The progress of the reading plan: 
-| Index  |  All |
-| :----: | :--: |
-| 27 | 50 |
-
 ## Paper Information
 #### Paper Title : 
-[]() 
 
 #### Conference : 
 
-
-
-
 #### Authors and Institutions
-##### Authors
-
-
-
-##### Institutions
-
-
 
 #### Official Codes
-
-
-#### Some articles to comprehend this paper
-
-
 #### Network Structure
 
 <div  align="center">    
 <img src="https://raw.githubusercontent.com/zhixuanli/segmentation-paper-reading-notes/master/images-folder/*.png" width="80%" />
 </div>
 
-## Note
-
-
-
-### Key Words
-
-
+## Short Summary
 
 ## Five questions about this paper:
 
