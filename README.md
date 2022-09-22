@@ -1,14 +1,19 @@
 # Weakly-supervised Semantic Segmentation for Histopathology Images
 
-This repository contains an overview and short reviews of papers in the area of WSSS for histopathological image data.
+This repository contains an overview and short papers reviews of WSSS methods for histopathological image data.
 Occasionally, WSSS papers dealing exclusively with semantic segmentation on natural images (e.g. from PASCAL-VOC 2012 or ADE20K) will be included.
 I will update this list continuously during my current master thesis.
 
 ## Progress on Literature Review
-The ground-truth annotations used for training are listed for each paper in the *Annotation* column. 
-For WSSS, they generally fall (in order of decreasing informativeness) into one of the following categories: bounding box, scribble, point, or image label.
-The *LOD* column roughly indicates the level of detail of the segmentation, e.g. whether a class is assigned to each pixel or only to each patch.
-This is a very vague information, since the pathology images have a different resolution for the different methods and also the patch size itself differs. Therefore the *LOD* should only serve as a rough estimation for the time being.
+The ground-truth annotation type used for training is mentioned in the *Annotation* column for each paper. 
+For WSSS, it generally falls into one of the following categories (in order of decreasing informativeness): 
+- Bounding box
+- Scribble
+- Point
+- Image label
+
+The *LOD* column roughly indicates the level of detail of the segmentation for each paper, e.g. whether a class is assigned to each pixel or only to each patch.
+This is a very vague information, since the pathology images have a different resolution for the different methods and the chosen patch size differs too. Therefore the *LOD* should only serve as a rough estimation for the time being.
 ### WSSS for Histopathology Images
 
 | Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
