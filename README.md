@@ -36,7 +36,7 @@ This is a very vague information, since the pathology images have a different re
 ## Histopathology Datasets for Semantic Segmentation
 | Name      | Type          | #Labels/Img     | #Classes      | #Img       | #GT   | Image Size    | Resolution        | Paper    |
 | :----:    | :-------:     | :--------:        | :----------:  | :--------:    | :--:              | :-------:     |:-------:          | :-------:|
-| [CoCaHis](https://cocahis.irb.hr/) | Colon Cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1388 × 1037   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
+| [CoCaHis](https://cocahis.irb.hr/) | Colon Cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1037 x 1388   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
 
 
 

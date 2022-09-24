@@ -1,11 +1,8 @@
 ## Paper Information
-#### Paper Title : 
+#### Paper Title: [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf)
 
-#### Conference : 
+#### Conference: ICCV 2019
 
-#### Authors and Institutions
-
-#### Official Codes
 #### Network Structure
 
 <div  align="center">    
@@ -13,6 +10,9 @@
 </div>
 
 ## Short Summary
+CAMEL achieves comparable performance with fully-supervised approaches in both tasks: instance-level classification and pixel-level segmentation.
+It first performs a weakly-supervised patch classification using their proposed method cMIL. 
+These patch labels are then used in a self-supervised manner to train a pixel-wise segmentation under full supervision with [DeepLabv2](https://github.com/google-research/deeplab2).
 
 ## Five questions about this paper:
 
