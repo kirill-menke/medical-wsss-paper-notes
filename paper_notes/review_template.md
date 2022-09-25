@@ -6,9 +6,7 @@
 #### Official Codes
 #### Network Structure
 
-<div  align="center">    
-<img src="https://raw.githubusercontent.com/zhixuanli/segmentation-paper-reading-notes/master/images-folder/*.png" width="80%" />
-</div>
+![Image](path)
 
 ## Short Summary
 
