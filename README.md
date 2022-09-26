@@ -16,9 +16,9 @@ The *LOD* column roughly indicates the level of detail of the segmentation for e
 This is a very vague information, since the pathology images have a different resolution for the different methods and the chosen patch size differs too. Therefore the *LOD* should only serve as a rough estimation for the time being.
 ### WSSS for Histopathology Images
 
-| Conference | Title | Annotation | LOD | My Review | Official Code | Datasets |
+| Conference | Title | Annotation | LOD | Notes | Official Code | Datasets |
 | :-------: | :-------- | :----------: | :--------: | :--: | :-------: | :------- |
-| ICCV 2019 | [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf) | image label (binary) | patch-level | *coming soon* | - | [CAMELYON16](https://camelyon16.grand-challenge.org/Home/), [Colorectal Adenoma](https://github.com/ThoroughImages/CAMEL) |
+| ICCV 2019 | [CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation](https://arxiv.org/pdf/1908.10555.pdf) | image label (binary) | patch-level | [camel.md](paper_notes/CAMEL.md) | - | [CAMELYON16](https://camelyon16.grand-challenge.org/Home/), [Colorectal Adenoma](https://github.com/ThoroughImages/CAMEL) |
 | MICCAI 2020 | [Weakly supervised multiple instance learning histopathological tumor segmentation](https://arxiv.org/abs/2004.05024) | image label (binary) | patch-level | *coming soon* | [pytorch](https://github.com/marvinler/tcga_segmentation) | [TCGA](https://portal.gdc.cancer.gov/), [PatchCamelyon](https://patchcamelyon.grand-challenge.org/) |
 | 2021 | [Data-efficient and weakly supervised computational pathology on whole-slide images](https://arxiv.org/pdf/2004.09666.pdf) | image label (binary) | patch-level | *coming soon* | [pytorch](https://github.com/mahmoodlab/CLAM) | [CAMELYON16](https://camelyon16.grand-challenge.org/), [CAMELYON17](https://camelyon17.grand-challenge.org/), [TCGA](https://portal.gdc.cancer.gov/), [CPTAC](https://proteomics.cancer.gov/data-portal) |
 | MICCAI 2021 | [Learning Whole-Slide Segmentation from Inexact and Incomplete Labels using Tissue Graphs](https://arxiv.org/pdf/2103.03129.pdf) | image labels and scribbles (multi-class) | superpixel-level | *coming soon* | [pytorch](https://github.com/histocartography/seg-gini) | [SICAPv2](https://data.mendeley.com/datasets/9xxm58dvs3/1), UZH |
@@ -29,14 +29,16 @@ This is a very vague information, since the pathology images have a different re
 
 
 ### WSSS for Natural Images
-| Conference | Title | Annotation | LOD | My Review | Offical Code | Datasets |
+| Conference | Title | Annotation | LOD | Notes | Offical Code | Datasets |
 | :-------: | :-------- | :----------: | :--------: | :--: | :-------: | :------- |
 | ICCV 2017 | [Simple Does It: Weakly Supervised Instance and Semantic Segmentation](https://arxiv.org/pdf/1603.07485.pdf) | bounding box (multi-class) | pixel-level | *coming soon* | no | [PASCAL VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/), VOC12+COCO |
 
 ## Histopathology Datasets for Semantic Segmentation
 | Name      | Type          | #Labels/Img     | #Classes      | #Img       | #GT   | Image Size    | Resolution        | Paper    |
 | :----:    | :-------:     | :--------:        | :----------:  | :--------:    | :--:              | :-------:     |:-------:          | :-------:|
-| [CoCaHis](https://cocahis.irb.hr/) | Colon Cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1037 x 1388   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
+| [CAMELYON16](https://camelyon16.grand-challenge.org) | Lymph node metastasis | 1 | 1 | 400 | 400 | 100k x 100k | 0.25 microns/px | [yes](https://jamanetwork.com/journals/jama/article-abstract/2665774) |
+| [CAMELYON17](https://camelyon17.grand-challenge.org/) | Lymph node metastasis | 1 | 1 | 1000 | 500 | 100k x 100k | 0.25 microns/px | [yes](https://ieeexplore.ieee.org/document/8447230)
+| [CoCaHis](https://cocahis.irb.hr/) | Colon cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1037 x 1388   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
 
 
 
