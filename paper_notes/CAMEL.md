@@ -61,6 +61,7 @@ CAMEL manages to generalize well to other cancer types.
 - Sensitivity 
 - Specificity
 - Accuracy
+- F1-Score
 - IoU
 
 

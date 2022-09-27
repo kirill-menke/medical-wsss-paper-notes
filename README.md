@@ -40,8 +40,3 @@ This is a very vague information, since the pathology images have a different re
 | [CAMELYON17](https://camelyon17.grand-challenge.org/) | Lymph node metastasis | 1 | 1 | 1000 | 500 | 100k x 100k | 0.25 microns/px | [yes](https://ieeexplore.ieee.org/document/8447230)
 | [CoCaHis](https://cocahis.irb.hr/) | Colon cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1037 x 1388   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
 
-
-
-## TODO
-- Level-of-detail for segmentation resolution is too vague/ inaccurate
-- Add image sizes of datasets used in papers since in some papers image label refers to small images (e.g. 3000 x 3000) while in others it refers to a WSI (e.g. 100k x 100k)
