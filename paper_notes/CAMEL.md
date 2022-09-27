@@ -49,11 +49,12 @@ A new method for binary instance-level classification called combined MIL (cMIL)
 #### 3.1 Which Datasets are used?
 1. CAMELYON16
 
-400 H&E stained WSIs of lymph node sections at 20x magnification (approx. 0.5 microns/pixel) are utilized.
+   400 H&E stained WSIs of lymph node sections at 20x magnification (approx. 0.5 microns/pixel) are utilized.
 The WSIs are split into 1280 x 1280 patches for training (96k non-cancer and 5k cancer). The cancer patches are oversampled.
 
 2. Colorectal Adenoma Dataset (private)
-To evaluate the generality of CAMEL, tests are performed on a second WSI dataset of colorectal adenoma.
+
+   To evaluate the generality of CAMEL, tests are performed on a second WSI dataset of colorectal adenoma.
 CAMEL manages to generalize well to other cancer types.
 
 
@@ -69,11 +70,10 @@ No ablation study was performed
 
 
 #### 3.4 What is the ranking of the experiment results?
-Comparision with other WSSS methods:
+Comparision with other WSSS methods. WILDCAT, however, was developed for natural images.
 
 ![comparision](images/camel_comparision.png)
 
-WILDCAT, however, was developed for natural images.
 
 ### 4. Advantages (self-summary rather than the author's)
 Reaches a comparable performance to the fully-supervised baseline with pixel-level annotations.
