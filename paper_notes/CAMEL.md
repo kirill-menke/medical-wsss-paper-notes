@@ -22,7 +22,7 @@ The authors state that CAMEL achieves comparable performance with fully-supervis
 ## Five questions about this paper:
 
 ### 1. [Motivation] What problem is this paper trying to solve?
-It tackles the problem of semantic segmentation using binary image-level labels
+It tackles the problem of semantic segmentation using binary image-level labels of WSI-patches
 
 
 ### 2. [Method] How does this paper solve the above problems?
