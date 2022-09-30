@@ -33,10 +33,18 @@ This is a very vague information, since the pathology images have a different re
 | :-------: | :-------- | :----------: | :--------: | :--: | :-------: | :------- |
 | ICCV 2017 | [Simple Does It: Weakly Supervised Instance and Semantic Segmentation](https://arxiv.org/pdf/1603.07485.pdf) | bounding box (multi-class) | pixel-level | *coming soon* | no | [PASCAL VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/), VOC12+COCO |
 
-## Histopathology Datasets for Semantic Segmentation
-| Name      | Type          | #Labels/Img     | #Classes      | #Img       | #GT   | Image Size    | Resolution        | Paper    |
-| :----:    | :-------:     | :--------:        | :----------:  | :--------:    | :--:              | :-------:     |:-------:          | :-------:|
+## Histopathology Datasets
+Below is an overview of histopathology datasets from various body regions and tumor types. These can be used either for training or evaluation of classification or segmentation algorithms.
+The columns have the following meaning:
+- *#Labels/Img*: Number of labels per image (BG = background)
+- *#Classes*: How many different classes an image can be contain (most datasets only differentiate between tumor and background)
+- *#Img*: Total number of images in the dataset
+- *#PGT*: Number of images which have a **p**ixel-wise **g**round-**t**ruth annotation (some images may only have image-level labels)
+
+| Name      | Type          | #Labels/Img     | #Classes      | #Img       | #PGT   | Image Size    | Resolution        | Paper    |
+| :----:    | :-------:     | :--------:        | :----------:  | :--------    | :--:              | :-------     |:-------          | :-------:|
 | [CAMELYON16](https://camelyon16.grand-challenge.org) | Lymph node metastasis | 1 | 1 | 400 | 400 | 100k x 100k | 0.25 microns/px | [yes](https://jamanetwork.com/journals/jama/article-abstract/2665774) |
 | [CAMELYON17](https://camelyon17.grand-challenge.org/) | Lymph node metastasis | 1 | 1 | 1000 | 500 | 100k x 100k | 0.25 microns/px | [yes](https://ieeexplore.ieee.org/document/8447230)
+| [PatchCamelyon](https://patchcamelyon.grand-challenge.org/) | Lymph node metastasis | 1 | 1 | 327.680 | 0 | 96 x 96 | 0.25 microns/px | no |
 | [CoCaHis](https://cocahis.irb.hr/) | Colon cancer  | 1 + BG            | 1 + BG        | 82            | 82                | 1037 x 1388   | 0.45 microns/px   | [yes](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) |
 
