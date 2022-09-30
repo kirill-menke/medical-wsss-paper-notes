@@ -70,11 +70,13 @@ No ablation study was performed
 
 
 #### 3.4 What is the ranking of the experiment results?
-Comparision with other WSSS methods:
+Comparison with other WSSS methods on the CAMELYON16 test set. WILDCAT, however, was developed for natural images:
 
 ![comparision](images/camel_comparision.png)
 
-WILDCAT, however, was developed for natural images.
+Evaluation of generalization ability of CAMEL to colorectal adenoma dataset:
+
+![comparision](images/camel_comparision_2.png)
 
 ### 4. Advantages (self-summary rather than the author's)
 Reaches a comparable performance to the fully-supervised baseline with pixel-level annotations.
