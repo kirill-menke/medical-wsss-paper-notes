@@ -58,7 +58,3 @@ Grey results take background into account.
 ![Image](images/patch_classification_performance.png)
 
 Performance on PatchCamelyon is not included in the table above and achieved the optimal AUC of 0.802 for alpha = 20% and beta = 20%.
-### 4. Advantages (self-summary rather than the author's)
-
-
-### 5. Disadvantages (self-summary rather than the author's)
