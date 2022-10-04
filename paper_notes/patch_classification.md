@@ -17,7 +17,7 @@ MIL is applied to train an instance classifier model. Therefore, a WSI is divide
 ## Five questions about this paper:
 
 ### 1. [Problem Definition] What problem is this paper trying to solve? 
-It tackles the problem of WSI segmentation using only binary image-level labels of WSIs
+It tackles the problem of WSI segmentation using only binary image-level labels of WSI patches
 
 
 ### 2. [Method] How does this paper solve the above problems?
