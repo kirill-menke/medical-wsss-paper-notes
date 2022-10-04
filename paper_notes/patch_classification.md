@@ -3,7 +3,8 @@
 
 #### Conference: MICCAI 2020
 
-#### Official Codes
+#### Official Code: https://github.com/marvinler/tcga_segmentation
+
 #### Network Structure
 
 ![Image](images/patch_classification.png)
