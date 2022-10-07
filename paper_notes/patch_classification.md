@@ -14,7 +14,7 @@ Within this paper a patch-based segmentation algorithm is proposed based on bina
 MIL is applied to train an instance classifier model. Therefore, a WSI is divided into equally-sized patches (224 x 224) which are interpreted as instances.
 
 
-## Five questions about this paper:
+## Three questions about this paper:
 
 ### 1. [Problem Definition] What problem is this paper trying to solve? 
 It tackles the problem of WSI segmentation using only binary image-level labels of WSI patches
@@ -34,14 +34,21 @@ Only these patches are then used to update the weights. The rest is discarded.
 ### 3. Details about the experiment
 
 #### 3.1 Which Datasets are used?
-6481 flash-frozen WSIs of kidney, lung, and breast at 20x magnification from the TCGA dataset were used.
-From these, 4212, 972, and 1296 images were used for training, validation, and testing, respectively.
-130 of the test images were annotated on pixel-level for a better performance assesment. 
+- Image type: flash-frozen H&E stained WSIs, kidney, lung, and breast cancer (TCGA)
+- Image number: 6212
+- Train/Val/Test: 4212 / 972 / 1296
+- Image size: 100k x 100k, but 224 x 224 patches were sampled from the WSIs for training
+- Resolution: 0.5 microns/pixel at 20x magnification
 
-To measure out-of-distribution performance, the model was evaluated on additional 100 slides extracted from locations that were not used during training (colon, ovary, corpus uteri).
-Additionally, the model was evaluated on the PatchCamelyon dataset, which contains formalin-fixed, parafin-embedded (FFPE) tissues. These are visually different from flash-frozen ones.
-#### 3.2 How is the experiment set up?
-15 ResNet50 networks with different configurations for alpha and beta were trained and compared with eachother on the test sets mentioned above.
+To measure out-of-distribution performance or generalization ability, the model was evaluated on additional 100 slides extracted from locations that were not used during training (colon, ovary, corpus uteri). Additionally, the model was evaluated on the PatchCamelyon dataset, which contains formalin-fixed, parafin-embedded (FFPE) tissues. These are visually different from flash-frozen ones.
+
+#### 3.2 What are the implementation details?
+- Hardware: 2 NVIDIA V100 GPUs
+- Training Time: 20 epochs, 16 hours training
+- Architecture: ResNet50 with 15 different configurations for alpha and beta were trained
+- Data augmentation: Rotation, Mirroring, Color jitter, channel-wise standard scaling from training averages and variances
+- Initialization: Pretrained on ImageNet
+- Batch size: 150
 
 
 #### 3.3 What's the evaluation metric?
